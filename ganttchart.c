@@ -60,15 +60,15 @@ int main()
 
 void print_table(Student p[], int n)
 {
-    int i;
+    int j;
 
     puts("+*****+*************+*************+*****************+");
     puts("| PID | Burst Time | Waiting Time | Turnaround Time |");
     puts("+*****+************+**************+*****************+");
 
-    for(i=0; i<n; i++) {
+    for(j=0; j<n; j++) {
         printf("| %2d  |     %2d     |      %2d      |        %2d       |\n"
-               , p[i].pid, p[i].b_time, p[i].w_time, p[i].t_time );
+               , p[j].pid, p[j].b_time, p[j].w_time, p[j].t_time );
         puts("+-----+------------+--------------+-----------------+");
     }
 
